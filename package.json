@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 4000",
-    "build": "mkdir -p public && cp ./index.html public/",
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "json-server": "^1.0.0-beta.3"
+  "dependencies": {
+    "json-server": "^0.17.0"
   }
 }
